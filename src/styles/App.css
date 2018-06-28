@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif */
+}
+input,button{
+  border: none;
+  outline: 0;
+}
+html,body,#root{
+ width: 100%;
+ height: 100%;
+}
+#root {
+  background: #F1F2F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App {
+  width: 468px;
+  height: 604px;
+  padding: 32px 16px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 #D7DBE6;
+}
+
+/* login */
+.login-box{
+  padding: 50px;
+  text-align: center;
+}
+.login-input{
+  border-bottom: 1px solid  #52BBFF;
+  line-height: 50px;
+  width: 300px;
+  font-size: 30px;
+  margin: 100px auto;
+}
+/* button */
+.btn--primary{
+  background: rgba(82, 187, 255, 1);
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all linear .3s;
+}
+.btn--primary:hover{
+  background: rgba(82, 187, 255, .8);
+}
+.btn--large{
+  border-radius: 4px;
+  padding: 10px 50px;
+  font-size: 18px;
+}
+
+/* chat */
+.chat--box{
+  position: relative;
+  height: 100%;
+  /* padding: 20px; */
+  /* border: 1px solid #D7DBE6; */
+  /* border-radius: 3px; */
+}
+.input--box{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.input--box input {
+  flex: 1;
+  padding: 5px 10px;
+  border: 1px solid #D7DBE6;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+/* chat */
+.message--list {
+  max-height: 470px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  transition: all cubic-bezier(0.4, 0, 1, 1) .15s;
+}
+.participants{
+  text-align: right;
+  color: #B4BDCE;
+  font-size: 13px;
+}
+
+.message-item{
+  display: flex;
+  /* align-items: center; */
+  color: #303133;
+  margin-bottom: 18px;
+}
+.message-item--body{
+  margin: 0 14px;
+}
+.message-item .message-item--content {
+  padding: 8px 10px;
+  border-radius: 4px;
+  max-width: 318px;
+}
+.item-user {
+    justify-content: flex-start;
+}
+.item-user .message-item--content {
+  background: #DCF1FF;
+}
+.item-visitor{
+  flex-direction: row-reverse;
+}
+.item-visitor .message-item--name {
+  text-align: right;
+}
+.item-visitor .message-item--content {
+  background:  #F3F3F3;
+}
+.message-item--avatar{
+  width: 24px;
+  height: 24px;
+
+}
+.message-item--avatar img{
+  width: 100%;
+}
+.message-item--info{
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+}
+.message-item--name{
+  color: #999;
+  font-size: 12px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
